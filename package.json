@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/index",
+    "server": "nodemon backend/index",
+    "client": "npm start --prefix frontend",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
   "license": "ISC",
