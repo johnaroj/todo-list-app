@@ -7,7 +7,7 @@
     "start": "node backend/index",
     "server": "nodemon backend/index",
     "client": "npm start --prefix frontend",
-    "heroku-postbuild":"npm run build --prefix frontend"
+    "heroku-postbuild":"npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
   "license": "ISC",
